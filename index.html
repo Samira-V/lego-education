@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md  fixed-top" style=" background: #fafafa;">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" style="width: 100px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lego Education</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">
+                  <i class="bi bi-house ms-2 d-md-none"></i><span> Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-telephone ms-2 d-md-none"></i><span>Link</span></a>
+              </li>
+              <li class="nav-item ">
+                <a id="course" class="nav-link " href="#collapseCourses" role="button" data-bs-toggle="collapse"
+                  aria-expanded="false">
+                  <i class="bi bi-book ms-2 d-md-none"></i> <span>Courses</span>
+                  <i id='caret' class="fa fa-angle-down "></i>
+                </a>
+                <div class="collapse  position-md-fixed " id="collapseCourses">
+                  <div class="course">
+                    <div class="course-item">
+                      <i class="fa fa-child ms-3"></i>
+                      <span>Early Learning</span>
+                    </div>
+                    <div class="course-item">
+                      <i class="fas fa-biohazard ms-3"></i>
+                      <span>Science Scope</span>
+                    </div>
+                    <div class="course-item">
+                      <i class="fa fa-child ms-3"></i>
+                      <span>Professional Learning</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item d-md-none">
+                <hr class="my-4">
+
+                <span> Lego Education In <b>Social Media</b></span>
+
+                <div class="row fs-3 w-75">
+                  <div class="col ">
+                    <i class="bi bi-telegram"></i>
+                  </div>
+                  <div class="col">
+                    <i class="bi bi-youtube"></i>
+                  </div>
+                  <div class="col">
+                    <i class="bi bi-linkedin"></i>
+                  </div>
+                  <div class="col">
+                    <i class="bi bi-instagram"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="icons ">
+        <div class=" d-md-flex d-none justify-content-evenly ">
+          <div class="search px-3" id="search">
+            <i class="bi bi-search-heart " data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+          </div>
+
+          <div class="login ">
+            <i class="bi bi-box-arrow-in-left " data-bs-toggle="collapse" href="#collapseExample"aria-expanded="false" aria-controls="collapseExample"></i>
+            
+            
+          </div>
+          <div class="shop px-3">
+            <i class="bi bi-cart-plus "></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content ">
+          <div class="modal-header ">
+          
+            <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="inline text-center">
+              <div class="input-icons w-100 mb-3">
+                <i class="fa fa-search icon position-absolute p-2"></i>
+                <input class="input-field px-4" type="text">
+
+              </div>
+              <button class="btn ">search</button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--intro-header-->
+
+    <section class="px-3 py-5  ">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5  ">
+
+            <h3 class="fs-1">The LEGO® Learning System</h3>
+            <p class="my-4">Rethink STEAM learning and spark joy in the classroom. With the LEGO® Learning System,
+              students’ knowledge, skills, and confidence grow along with their love of learning year after year.</p>
+            <button class="btn active rounded-pill"> courses</button>
+            <button class="btn  rounded-pill"> more</button>
+          </div>
+          <div class="col-md-6 offset-md-1">
+
+            <img src="/images/Autism-cuate.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!--early skill-->
+  <section>
+    <div class="container">
+      <div class="row align-items-center ">
+        <div class="col-md-6">
+          <img src="/images/skill.png" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h3>Build Their Early Skills​</h3>
+          <p class="my-4">Focus on building your students’skills with solutions designed to stimulate their curiosity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--courses-->
+  <div class="container">
+    <h4 class='text-center pt-4'>Courses</h4>
+    <p class='text-center py-2'>Lorem ipsum dolor sit amet.</p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+      <div class="col">
+        <div class="card " data-aos="fade-up">
+          <img src="/images/Autism-bro.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Grades 6-8</h5>
+            <p class="card-text">Build Middle School Confidence</p>
+            <div class="d-flex justify-content-between px-3 align-items-center">
+              <a href="#" class="btn rounded-pill ">SHOP</a>
+              <span class="text-muted">1500$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card  " data-aos="fade-up">
+          <img src="/images/early.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Grades 6-8</h5>
+            <p class="card-text">Build Middle School Confidence</p>
+            <div class="d-flex justify-content-between px-3 align-items-center">
+              <a href="#" class="btn rounded-pill">SHOP</a>
+              <span class="text-muted">1000$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card  " data-aos="fade-up">
+          <img src="/images/Team work-bro.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Early Learning</h5>
+            <p class="card-text">Build Confidence from Early On</p>
+            <div class="d-flex justify-content-between px-3 align-items-center">
+              <a href="#" class="btn rounded-pill">SHOP</a>
+              <span class="text-muted">2500$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--counter-->
+  <section>
+    <div class="container py-5 px-3 ">
+      <h3 class="text-center ">Lorem, ipsum dolor.</h3>
+      <p class="text-center py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="row  row-cols-1 row-cols-md-2 row-cols-lg-4  gy-4 text-center fs-5 ">
+        <div class="col">
+          <div class=" p-3  rounded-3 countainer-shadow">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="1000">0</span>
+            <p>book</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" p-3  rounded-3 countainer-shadow">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="4500">0</span>
+            <p>students</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" p-3  rounded-3 countainer-shadow">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="3000">0</span>
+            <p>minutes</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" p-3   rounded-3 countainer-shadow">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="100">0</span>
+            <p>Courses</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--FAQ-->
+  <section>
+    <div class="container py-5 px-3">
+      <h3 class="text-center">FAQ </h3>
+      <p class="text-center py-3">Lorem ipsum dolor sit amet.</p>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #4
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="/images/faq.svg" class="img-fluid py-2">
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!--services-->
+  <section>
+    <div class="container py-5 px-3">
+      <h3 class="text-center">Services</h3>
+      <p class="text-center py-3">Lorem ipsum dolor sit amet.</p>
+      <div class="row text-center">
+        <div class="col-md-6 col-lg-4 ">
+          <div class="service-box 
+          box1 p-5 my-3" data-aos="fade-left">
+            <i class="bi bi-cup-hot-fill fs-1"></i>
+            <h3>Lorem</h3>
+            <p class="pt-3 pb-4">Lorem ipsum dolor sit amet.</p>
+            <a href="" class="read-more "> read more
+              <i class="bi bi-caret-right-fill"></i>
+            </a>
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="service-box border-success p-5 my-3" data-aos="fade-left">
+            <i class=" fs-1 bi bi-bar-chart-line-fill"></i>
+            <h3>Lorem</h3>
+            <p class="pt-3 pb-4">Lorem ipsum dolor sit amet.</p>
+            <a href="" class="read-more text-success"> read more
+              <i class="bi bi-caret-right-fill"></i>
+            </a>
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="service-box 
+          border-warning p-5 my-3" data-aos="fade-left">
+            <i class="fs-1 bi bi-bug-fill"></i>
+            <h3>Lorem</h3>
+            <p class="pt-3 pb-4">Lorem ipsum dolor sit amet.</p>
+            <a href="" class="read-more text-warning"> read more
+              <i class="bi bi-caret-right-fill"></i>
+            </a>
+          </div>
+          <div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--pricing-->
+  <section py5 px-3>
+    <h3 class="text-center">courses price </h3>
+    <p class="text-center py-3">Lorem ipsum dolor sit amet.</p>
+    <div class="container">
+      <div class="row text-center gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+        <div class="col pricing-box">
+          <div class="card shadow">
+
+            <div class="card-body">
+              <h4 class="fw-bold my-3">course1</h4>
+              <p class="fw-bold">0 <sup class="text-danger fw-bold">$</sup>in month</p>
+              <img src="/images/early.png" class="img-fluid">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar-day ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature1</span>
+                </li>
+
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-alarm ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature2</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar-day ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature3</span>
+                </li>
+              </ul>
+              <button class="btn  my-3">SHOP</button>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col pricing-box">
+          <div class="card shadow">
+
+            <div class="card-body">
+              <h4 class="fw-bold my-3">course1</h4>
+              <p class="fw-bold">100 <sup class="text-danger fw-bold">$</sup>in month</p>
+              <img src="/images/Autism-amico.png" class="img-fluid">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar-day ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature1</span>
+                </li>
+
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-alarm ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature2</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar-day ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature3</span>
+                </li>
+              </ul>
+              <button class="btn  my-3">SHOP</button>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col pricing-box">
+          <div class="card shadow">
+
+            <div class="card-body">
+              <h4 class="fw-bold my-3">course1</h4>
+              <p class="fw-bold">65 <sup class="text-danger fw-bold">$</sup>in month</p>
+              <img src="/images/Autism-cuate.png" class="img-fluid">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar-day ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature1</span>
+                </li>
+
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-alarm ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature2</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar-day ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature3</span>
+                </li>
+              </ul>
+              <button class="btn  my-3">SHOP</button>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col pricing-box">
+          <div class="card shadow">
+
+            <div class="card-body">
+              <h4 class="fw-bold my-3">course1</h4>
+              <p class="fw-bold">150 <sup class="text-danger fw-bold">$</sup>in month</p>
+              <img src="/images/Autism-bro.png" class="img-fluid">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar-day ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature1</span>
+                </li>
+
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-alarm ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature2</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar-day ms-2" style="line-height: 0 ; font-size: 20px;"></i>
+                  <span>feature3</span>
+                </li>
+              </ul>
+              <button class="btn  my-3">SHOP</button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--footer vawe-->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#fafafa" fill-opacity="1"
+      d="M0,288L34.3,245.3C68.6,203,137,117,206,112C274.3,107,343,181,411,192C480,203,549,149,617,160C685.7,171,754,245,823,261.3C891.4,277,960,235,1029,213.3C1097.1,192,1166,192,1234,186.7C1302.9,181,1371,171,1406,165.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+    </path>
+  </svg>
+  <!--footer-->
+  <footer class=" py-5 px-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 offset-lg-1">
+          <h3>footer</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="row fs-5 w-75 my-3">
+            <div class="col ">
+              <i class="bi bi-telegram text-primary"></i>
+            </div>
+            <div class="col">
+              <i class="bi bi-youtube text-danger"></i>
+            </div>
+            <div class="col">
+              <i class="bi bi-linkedin text-info"></i>
+            </div>
+            <div class="col">
+              <i class="bi bi-instagram text-danger"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <h5 class="fw-bold border-bottom border-4 border-danger pb-3 w-75">links</h5>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Home
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Contact
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Blog
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            About
+          </p>
+
+
+
+        </div>
+        <div class="col-lg-2">
+          <h5 class="fw-bold border-bottom border-4 border-success pb-3 w-75">links</h5>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Home
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Contact
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Blog
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            About
+          </p>
+
+
+
+        </div>
+        <div class="col-lg-2">
+          <h5 class="fw-bold border-bottom border-4 border-primary pb-3 w-75">links</h5>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Home
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Contact
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            Blog
+          </p>
+          <p class="d-flex align-items-center ">
+            <i class="bi bi-caret-right"></i>
+            About
+          </p>
+
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/script.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <!--aos.js-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--purecounter.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script>
+    new PureCounter();
+  </script>
+</body>
+
+</html>

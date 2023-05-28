@@ -1,0 +1,105 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@font-face {
+    font-family: 'FugazOne';
+    src: url(../fonts/FugazOne-Regular.ttf);
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+   
+}
+
+@media screen and (min-width : 768px) {
+    .position-md-fixed{
+     position: fixed;     
+    }
+
+}
+.course{
+width: 300px;
+
+
+border-radius: 10px;
+background: #fafafa;
+}
+.course-item{
+    width: 100%;
+ display: flex;
+ padding: 10px 15px;
+}
+.course-item:hover{
+   border-left : 3px solid #e77917;
+   
+}
+p{
+    font-family: 'Amaranth';
+}
+.btn{
+    outline: none;
+    background-color: #219EBC;
+    font-size: 14px;
+}
+.btn:hover{
+    background-color:#023047;
+    color: #fff;
+}
+i{
+    cursor: pointer;
+}
+
+.countainer-shadow{
+    box-shadow: 2px 0px 4px #219EBC
+}
+
+.service-box{
+    box-shadow: 0 0 2px rgba(0, 0, 0,0.3);
+    border-bottom: 4px solid ;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.service-box:hover .read-more{
+    color: #fff !important;
+}
+.service-box:hover {
+    color: #fff !important;
+}
+.service-box.border-success:hover{
+    background: #198754;
+}
+.service-box.border-warning:hover{
+    background: #ffc107;
+}
+.service-box.box1{
+    border-bottom: 4px solid #219EBC;
+}
+.service-box.box1:hover{
+    background: #219EBC;
+    border-bottom: 4px solid #219EBC;
+}
+.read-more{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #219EBC;
+}
+.pricing-box{
+    transition: all 0.5s;
+}
+.pricing-box:hover{
+    transform: scale(1.05);
+}
+footer{
+    background: #fafafa;
+}
+.bi{
+    transition: all 0.5s;
+}
+.col .bi:hover{
+    transform: rotate(360deg);
+   
+}
